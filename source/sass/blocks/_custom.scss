@@ -1,0 +1,226 @@
+@include mq(min, xxl) {
+  .container {
+    max-width: calc(1360px + 1.5rem);
+  }
+}
+main {
+  & > section {
+    &:not(:last-child) {
+      margin-bottom: var(--root-section-margin);
+    }
+   }
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Trajan';
+  font-size: 1.5rem;
+  line-height: 130%;
+
+  color: var(--clr-2);
+
+  @include mq(min, xxl) {
+    font-size: 2.5rem;
+  }
+}
+.nav {
+  &-link {
+    font-size: 0.875rem;
+  }
+}
+.header {
+  &-logo {
+    max-width: 12.5rem;
+  }
+}
+.home {
+  &-body {
+    min-height: 27.375rem;
+    @include mq(min, md) {
+      min-height: 42.25rem;
+    }
+    @include mq(min, xl) {
+      min-height: 42.5rem
+    }
+  }
+  &-content {
+    padding-bottom: 7.5rem;
+    padding-right: 1.5rem;
+    @include mq(min, xl) {
+      padding-right: 2.875rem;
+    }
+  }
+  &-image {
+    max-width: 25.5rem;
+    bottom: -1rem;
+    left: -4rem;
+    @include mq(min, md) {
+      max-width: 35.75rem;
+      left: -9rem;
+      bottom: 4.375rem;
+    }
+    @include mq(min, xl) {
+      left: 0;
+      bottom: 0.75rem;
+      max-width: 50rem;
+    }
+  }
+  &-title {
+    font-size: 1.5rem;
+    @include mq(min, md) {
+      font-size: 2.5rem;
+    }
+    @include mq(min, xl) {
+      font-size: 3.5rem;
+    }
+  }
+  &-btn-wrapper {
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.375rem;
+    @include mq(min, sm) {
+      left: initial;
+      right: 3rem;
+      transform: translateX(0);
+    }
+    @include mq(min, md) {
+      padding: 0.5rem;
+      bottom: -41px;
+     }
+    @include mq(min, xl) {
+      right: 11.625rem;
+    }
+  }
+  &-offer {
+    min-height: 11.5rem;
+    padding: 1.75rem 0.75rem;
+    @include mq(min, md) {
+      padding: 2rem 2.5rem;
+      min-height: 15.75rem;
+    }
+    @include mq(min, xl) {
+      padding: 2.5rem 2rem;
+    }
+  }
+}
+.lessons {
+  margin: var(--neg-lessons-section-margin) 0 0 0;
+  &-info-text {
+    font-size: 1rem;
+    @include mq(min, sm) {
+      font-size: 1.25rem;
+    }
+  }
+  &-content {
+    padding: 1.5rem 1rem;
+    box-shadow: 0rem 1rem 2.5rem 0rem rgba(0, 0, 0, 0.03);
+    @include mq(min, sm) {
+      padding: 2rem 1.5rem;
+    }
+    @include mq(min, xl) {
+      padding: 3.5rem 2.5rem;
+    }
+  }
+}
+.button-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.125rem 1.5rem;
+    border: 1px solid var(--clr-1);
+
+    width: fit-content;
+
+    border-radius: 0.75rem;
+
+    transition: 200ms ease;
+
+    &--filled {
+      background-image: var(--btn-gradient);
+
+      color: #fff;
+    }
+    & > span {
+      line-height: 100%;
+      font-weight: 700;
+      font-size: 0.875rem;
+    }
+    @include hover {
+      &:hover {
+        filter: brightness(80%);
+      }
+    }
+    @include mq(min, md) {
+      padding: 1.5rem 1.5rem;
+
+      & > span {
+        font-size: 1rem;
+      }
+    }
+    &--md {
+      padding: 1.25rem 1.5rem;
+    }
+}
+p {
+  line-height: 140%;
+  font-size: 0.875rem;
+  color: var(--clr-1);
+  @include mq(min, xxl) {
+    font-size: 1rem;
+  }
+}
+.no-round-flag {
+  width: 1.75rem;
+  @include mq(min, xxl) {
+    width: 2.875rem;
+  }
+}
+.info {
+  &-row {
+    grid-gap: 5.25rem 0;
+    @include mq(min, sm) {
+      grid-gap: 9.25rem 0;
+    }
+    @include mq(min, xl) {
+      grid-gap: 7.75rem 0;
+    }
+  }
+  &-divider {
+    display: none;
+    @include mq(min, xxl) {display: block;}
+  }
+  &-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+.map {
+  &-banner {
+    min-height: 8.125rem;
+    border-radius: 0.75rem;
+  }
+}
+.card {
+  &-item {
+    min-height: 37.5rem;
+
+    padding: 0.75rem;
+
+    background: linear-gradient(180deg, #FFE8D7 0%, #EEE6DB 100%);
+    box-shadow: 0px 16px 20px 0px rgba(238, 230, 219, 0.30);
+  }
+  &-content {
+
+  }
+  &-title {
+    font-size: 1.5rem;
+  }
+}
+
+@include mq(min, xl) {
+  .card {
+    &-title {
+      font-size: 2.5rem;
+    }
+  }
+}

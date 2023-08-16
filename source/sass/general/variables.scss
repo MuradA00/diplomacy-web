@@ -1,0 +1,108 @@
+:root {
+  --red-clr: #FF4B4B;
+  --grn-clr: #93CD49;
+  --light-clr: #F3F4F5;
+  --clr-2: #20282B;
+  --clr-1: #314E5C;
+  --clr-3: #716F7D;
+  --clr-4: #A098A5;
+  --clr-5: #D2C2C3;
+  --clr-6: #EEE6DB;
+  --card-bg: linear-gradient(180deg, #FFE8D7 0%, var(--clr-6) 100%);
+  --btn-gradient: linear-gradient(135deg, #314E5C 0%, #3A7592 100%);
+  --neg-lessons-section-margin: -1.25rem;
+  --root-section-margin: 3rem;
+}
+
+$media: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+.text-red-clr {
+  color: var(--red-clr);
+}
+.text-grn-clr {
+  color: var(--grn-clr);
+}
+.text-light-clr {
+  color: var(--light-clr);
+}
+.text-clr-1 {
+  color: var(--clr-1);
+}
+.text-clr-2 {
+  color: var(--clr-2);
+}
+.text-clr-3 {
+  color: var(--clr-3);
+}
+.text-clr-4 {
+  color: var(--clr-4);
+}
+.text-clr-5 {
+  color: var(--clr-5);
+}
+.text-clr-6 {
+  color: var(--clr-6);
+}
+.ff-sec {
+  font-family: 'Trajan';
+}
+.bg-red-clr {
+  background-color: var(--red-clr);
+}
+.bg-grn-clr {
+  background-color: var(--grn-clr);
+}
+.bg-light-clr {
+  background-color: var(--light-clr);
+}
+.bg-clr-1 {
+  background-color: var(--clr-1);
+}
+.bg-clr-2 {
+  background-color: var(--clr-2);
+}
+.bg-clr-3 {
+  background-color: var(--clr-3);
+}
+.bg-clr-4 {
+  background-color: var(--clr-4);
+}
+.bg-clr-5 {
+  background-color: var(--clr-5);
+}
+.bg-clr-6 {
+  background-color: var(--clr-6);
+}
+.ff-sec {
+  font-family: 'Trajan';
+}
+
+@include mq(min, sm) {
+  :root {
+    --root-section-margin: 4rem;
+  }
+}
+@include mq(min, md) {
+  :root {
+    --neg-lessons-section-margin: -5.25rem;
+  }
+}
+@include mq(min, lg) {
+
+}
+@include mq(min, xl) {
+  :root {
+    --root-section-margin: 6rem;
+    --neg-lessons-section-margin: -4rem;
+  }
+}
+@include mq(min, xxl) {
+
+}
