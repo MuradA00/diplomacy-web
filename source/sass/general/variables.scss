@@ -12,6 +12,9 @@
   --btn-gradient: linear-gradient(135deg, #314E5C 0%, #3A7592 100%);
   --neg-lessons-section-margin: -1.25rem;
   --root-section-margin: 3rem;
+  --faq-image-container-transition-duration: 300ms;
+  --faq-image-container-transition-timing: ease;
+  --faq-image-container-h: 7rem;
 }
 
 $media: (
@@ -87,6 +90,7 @@ $media: (
 @include mq(min, sm) {
   :root {
     --root-section-margin: 4rem;
+    --faq-image-container-h: 15.75rem;
   }
 }
 @include mq(min, md) {
@@ -99,6 +103,7 @@ $media: (
 }
 @include mq(min, xl) {
   :root {
+    --faq-image-container-h: 21.75rem;
     --root-section-margin: 6rem;
     --neg-lessons-section-margin: -4rem;
   }
